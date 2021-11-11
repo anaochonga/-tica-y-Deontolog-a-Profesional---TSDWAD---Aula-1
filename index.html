@@ -191,754 +191,795 @@
           Accesibilidad para no Videntes / Screen Reader
         </button>
       </h2>
-      <p>
-        El manejo de computadoras resulta extremadamente complicado
-        para las personas con ceguera parcial o completa. No obstante,
-        gracias al desarrollo técnico de los últimos años, <br> estas personas
-        también han empezado a utilizar una computadora en su día a día sin
-        grandes problemas. Con los screen readers, los textos escritos se
-        emiten en forma de voz artificial <br> (text to speech, de texto a voz en español)
-        o como líneas braille táctiles, cumpliendo así con el objetivo de que las personas
-        invidentes también puedan utilizar una computadora. <br> Así, esta tecnología permite que,
-        además del PC, estas personas puedan manejar también otros dispositivos, como los smartphones,
-        por medio de aplicaciones de lectores de pantalla.
-      </p>
-      <img src="img/screen-reader/ES-Screenreader-1.png"
-        alt="Imagen que describe la manera en la que un lector de pantalla funciona.">
-      <br>
-      <br>
-      <p>
-        Deben tenerse en cuenta características cualitativas a la hora de elegir un screen reader:
-      </p>
-      <ul>
-        <br>
-        <li>
-          <b>Acentuación de palabras.</b> El sintetizador no solo tiene que pronunciar correctamente<br>
-          palabras aisladas, sino también adaptar la acentuación a su posición en la frase.
-        </li>
-        <br>
-        <li>
-          <b>Transición de las sílabas.</b> Si el sintetizador compone la lengua a partir de sílabas,<br>
-          las transiciones deben diseñarse con fluidez para crear palabras comprensibles.
-        </li>
-        <br>
-        <li>
-          <b>Entonación de la frase.</b> Si las subidas y bajadas de tono son relevantes para el significado de la
-          frase<br>
-          (algo que se marca con la puntuación en la lengua escrita), el sintetizador debe ser capaz de reproducirlo.
-        </li>
-        <br>
-        <li>
-          <b>Velocidad del habla.</b> El sintetizador debe intentar imitar el ritmo natural de la lengua<br>
-          para que el usuario obtenga una impresión auditiva natural.
-        </li>
-        <br>
-        <li>
-          <b>Velocidad de lectura.</b> La velocidad de lectura también es importante para el usuario.<br>
-          En el mejor de los casos, la establece él mismo..
-        </li>
-        <br>
-        <li>
-          <b>Pausas.</b> Los elementos de formato como párrafos y saltos de línea deben marcarse, <br>
-          como pausas en la conversación para que sea fácil registrar el principio y el final de cada fragmento.
-        </li>
-      </ul>
-      <br>
-      <h2>Implementación de Screen Reader.</h2>
-      <br>
-      <p>
-        A la hora de implementar este u ótro tipo de accesibilidad, es de suma importancia la buena semántica,
-        y el por qué deberíamos de usar el elemento HTML adecuado para cada caso.<br>Esto no puede ignorarse,
-        ya que es uno de los principales lugares donde la accesibilidad se rompe si no se maneja correctamente.<br>
-
-        Una de las mejores ayudas de accesibilidad que un usuario lector de pantalla puede tener es una buena estructura
-        <br>
-        de contenido de cabeceras, párrafos, listas, etc. Un ejemplo de buena semántica puede lucir como el de a
-        continuación: <br>
-      </p>
-      <img src="img/screen-reader/buena-estructura-html.png" alt="Imagen que muestra una estuctura semántica correcta en lo que implementación en
-                              html refiere.">
-      <br>
-      <br>
-      <h2>Otros mecanismos de texto alternativo.</h2>
-      <br>
-      <p>
-        Las imágenes también tienen otros mecanismos disponibles para proporcionar texto descriptivo.
-        Por ejemplo, hay un atributo <i>longdesc</i> que apunta a un documento web separado que contiene una descripción
-        ampliada de la imagen, por ejemplo:
-      </p>
-      <br>
-      <br>
-      <img src="img/screen-reader/texto-alternativo1.png"
-        alt="Imagen que describe el uso de la etiqueta html longdesc.">
-      <br>
-      <p>
-        Parece una buena idea, especialmente para infografías como gráficos grandes con mucha información que tal vez
-        podría <br>
-        representarse como una tabla de datos accesible (consulte la sección anterior). Sin embargo, longdesc no es
-        compatible <br>
-        de forma consistente con lectores de pantalla, y el contenido es completamente inaccesible para los usuarios que
-        no usan <br>
-        lectores de pantalla. Podría decirse que es mucho mejor incluir la descripción larga en la misma página que la
-        imagen, o vincularla con un enlace normal.<br>
-        HTML5 incluye dos elementos nuevos, <i>figure</i> y <i>figcaption</i>, que se supone que asocian una figura de
-        algún tipo (podría ser cualquier cosa, no necesariamente una imagen) con un pie de figura:
-      </p>
-      <br>
-      <br>
-      <img src="img/screen-reader/texto-alternativo2.png"
-        alt="Imagen que describe el uso de las etiquetas html figure, figcaption y el parámetro alt.">
-      <br>
-    </div>
-  </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accesibilidad Vista Reducida / Daltonismo
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-      data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-        <div>
-          <h1>Diseñando para Discapacidad Visual</h1>
-          <br />
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
           <p>
-            Existe un 4.5% de la población total que experimenta
-            daltonismo,entre ellos 4% sufriendo de debilidad visual y otro
-            0.6% siendo ciegos, las dificultades visuales cuando se usa la
-            web son más predominantes de lo que visual podrías estimar. Con
-            este trabajo se contempla cómo diseñar o adaptar webs para
-            personas con discapacidades visuales puede mejorar la web para
-            todos.
+            El manejo de computadoras resulta extremadamente complicado
+            para las personas con ceguera parcial o completa. No obstante,
+            gracias al desarrollo técnico de los últimos años, <br> estas personas
+            también han empezado a utilizar una computadora en su día a día sin
+            grandes problemas. Con los screen readers, los textos escritos se
+            emiten en forma de voz artificial <br> (text to speech, de texto a voz en español)
+            o como líneas braille táctiles, cumpliendo así con el objetivo de que las personas
+            invidentes también puedan utilizar una computadora. <br> Así, esta tecnología permite que,
+            además del PC, estas personas puedan manejar también otros dispositivos, como los smartphones,
+            por medio de aplicaciones de lectores de pantalla.
           </p>
-          <br />
-
-          <h2>Accesibilidad para Todos</h2>
-          <p>Las discapacidades visuales más comunes pueden ser:</p>
-
-          <h2>Daltonismo</h2>
-          <br />
-          El Daltonismo involucra la dificultad de percibir o distinguir
-          entre colores, la sensibilidad al brillo de color,entre otros.
-          Afecta a aproximadamente 4.5% de la población mundial total.
-
-          <img alt="Vista de daltonismo" src="img/accesibilidad_vista_reducida/Daltonismo.png" />
-          <br />
-          <h2>Debilidad Visual</h2>
-
-          <div>
-            debilidad visual puede incluir vista parcial en los ojos,
-            agudeza pobre (visión borrosa), visión de túnel, pérdida del
-            campo central y visión nublada.
-          </div>
-          <img alt="" src="img/accesibilidad_vista_reducida/Debilidad Visual.png" />
-          <br />
-          <h2>Ceguera</h2>
-
-          <div>
-            Ceguera es la pérdida sustancial de la visión en ambos ojos de
-            una persona.
-          </div>
-
-          <h2>Personas Perciben la Web de Manera Diferente</h2>
-
-          <div>
-            La naturaleza diversa de estas discapacidades puede crear una
-            amplia variación de cómo las páginas web son percibidas por
-            personas con habilidades y capacidades visuales diferentes.
-            Debemos asegurarnos de que pueden acceder e interpretar todas
-            las características de la misma manera.
-          </div>
-          <h2>
-            Viendo la Página de Inicio de Tumblr Con Discapacidades Visuales
-          </h2>
-          <div>
-            Como ejemplo, considera la página de inicio de Tumblr, en donde
-            el fondo de la página es una imagen grande (creada por sus
-            usuarios):
-          </div>
-          <br />
-          <img alt="Pagina de incio Tumblr" src="img/accesibilidad_vista_reducida/La Página de Inicio de Tumblr.jpg" />
-          <br />
-          <div>
-            Dependiendo del tipo y nivel de discapacidad visual que una
-            persona pudiera tener, el sitio podría ser percibido en una
-            cantidad de maneras:
-          </div>
-
-          <h4>1. Visión periférica bloqueada (e.g. glaucoma)</h4>
-
-          <img src="img/accesibilidad_vista_reducida/Visión periférica bloqueada (e.g. glaucoma).jpg"
-            alt="Visión periférica bloqueada (e.g. glaucoma)" />
-          <br />
-          <h4>
-            2. Grandes espacios de visión bloqueada (retinopatía diabética)
-          </h4>
-
-          <img src="img/accesibilidad_vista_reducida/Grandes espacios de visión bloqueada (retinopatía diabética).jpg"
-            alt="Grandes espacios de visión bloqueada (retinopatía diabética)" />
-          <br />
-          <h4>3. Pérdida de agudeza (visión borrosa)</h4>
-
-          <img src="img/accesibilidad_vista_reducida/Pérdida de agudeza (visión borrosa).jpg"
-            alt="Pérdida de agudeza (visión borrosa)" />
-          <br />
-          <h4>4. Problemas de espectros</h4>
-
-          <img src="img/accesibilidad_vista_reducida/Problemas de espectros.jpg" alt="Problemas de espectros" />
-          <br />
-          <h4>5. Daltonismo con Tritanopia</h4>
-
-          <img src="img/accesibilidad_vista_reducida/Daltonismo con Tritanopía.jpg" alt="Daltonismo con Tritanopía" />
-          <br />
-          <div>
-            Los ejemplos de arriba muestran distintos tipos de discapacidad
-            de debilidad visual y ejemplos de daltonismo. Retomando:
-          </div>
-          <br />
+          <img src="img/screen-reader/ES-Screenreader-1.png"
+            alt="Imagen que describe la manera en la que un lector de pantalla funciona.">
+          <br>
+          <br>
+          <p>
+            Deben tenerse en cuenta características cualitativas a la hora de elegir un screen reader:
+          </p>
           <ul>
+            <br>
             <li>
-              La visión de túnel (imagen 1) es un tipo de bloqueo de visión
-              periférica, la cuál reduce la cantidad de elementos visibles
-              en la pantalla. El usuario solo puede ver elementos centrales.
+              <b>Acentuación de palabras.</b> El sintetizador no solo tiene que pronunciar correctamente<br>
+              palabras aisladas, sino también adaptar la acentuación a su posición en la frase.
             </li>
+            <br>
             <li>
-              La pérdida de agudeza, o visión borrosa (imagen 3), hace al
-              texto difícil de leer, ya que se vuelve borroso para el
-              usuario.
+              <b>Transición de las sílabas.</b> Si el sintetizador compone la lengua a partir de sílabas,<br>
+              las transiciones deben diseñarse con fluidez para crear palabras comprensibles.
             </li>
-
+            <br>
             <li>
-              El daltonismo (imagen 5) reduce el número de colores que un
-              usuario puede ver, así que hay más probabilidad de que los
-              elementos luzcan similares.
+              <b>Entonación de la frase.</b> Si las subidas y bajadas de tono son relevantes para el significado de la
+              frase<br>
+              (algo que se marca con la puntuación en la lengua escrita), el sintetizador debe ser capaz de
+              reproducirlo.
+            </li>
+            <br>
+            <li>
+              <b>Velocidad del habla.</b> El sintetizador debe intentar imitar el ritmo natural de la lengua<br>
+              para que el usuario obtenga una impresión auditiva natural.
+            </li>
+            <br>
+            <li>
+              <b>Velocidad de lectura.</b> La velocidad de lectura también es importante para el usuario.<br>
+              En el mejor de los casos, la establece él mismo..
+            </li>
+            <br>
+            <li>
+              <b>Pausas.</b> Los elementos de formato como párrafos y saltos de línea deben marcarse, <br>
+              como pausas en la conversación para que sea fácil registrar el principio y el final de cada fragmento.
             </li>
           </ul>
+          <br>
+          <h2>Implementación de Screen Reader.</h2>
+          <br>
+          <p>
+            A la hora de implementar este u ótro tipo de accesibilidad, es de suma importancia la buena semántica,
+            y el por qué deberíamos de usar el elemento HTML adecuado para cada caso.<br>Esto no puede ignorarse,
+            ya que es uno de los principales lugares donde la accesibilidad se rompe si no se maneja correctamente.<br>
 
-          <h2>Variaciones en la Percepción Afecta a la Usabilidad.</h2>
-
+            Una de las mejores ayudas de accesibilidad que un usuario lector de pantalla puede tener es una buena
+            estructura <br>
+            de contenido de cabeceras, párrafos, listas, etc. Un ejemplo de buena semántica puede lucir como el de a
+            continuación: <br>
+          </p>
+          <img src="img/screen-reader/buena-estructura-html.png" alt="Imagen que muestra una estuctura semántica correcta en lo que implementación en
+                              html refiere.">
+          <br>
+          <br>
+          <h2>Otros mecanismos de texto alternativo.</h2>
+          <br>
+          <p>
+            Las imágenes también tienen otros mecanismos disponibles para proporcionar texto descriptivo.
+            Por ejemplo, hay un atributo <i>longdesc</i> que apunta a un documento web separado que contiene una
+            descripción ampliada de la imagen, por ejemplo:
+          </p>
+          <br>
+          <br>
+          <img src="img/screen-reader/texto-alternativo1.png"
+            alt="Imagen que describe el uso de la etiqueta html longdesc.">
+          <br>
+          <p>
+            Parece una buena idea, especialmente para infografías como gráficos grandes con mucha información que tal
+            vez podría <br>
+            representarse como una tabla de datos accesible (consulte la sección anterior). Sin embargo, longdesc no es
+            compatible <br>
+            de forma consistente con lectores de pantalla, y el contenido es completamente inaccesible para los usuarios
+            que no usan <br>
+            lectores de pantalla. Podría decirse que es mucho mejor incluir la descripción larga en la misma página que
+            la imagen, o vincularla con un enlace normal.<br>
+            HTML5 incluye dos elementos nuevos, <i>figure</i> y <i>figcaption</i>, que se supone que asocian una figura
+            de algún tipo (podría ser cualquier cosa, no necesariamente una imagen) con un pie de figura:
+          </p>
+          <br>
+          <br>
+          <img src="img/screen-reader/texto-alternativo2.png"
+            alt="Imagen que describe el uso de las etiquetas html figure, figcaption y el parámetro alt.">
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accesibilidad Vista Reducida / Daltonismo
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
           <div>
-            Debido a estas variaciones en la percepción, los elementos clave
-            de un sitio web dado pueden volverse menos accesibles
-            dependiendo del grado de la discapacidad visual del usuario.
-          </div>
-
-          <h4>Características inaccesibles</h4>
-
-          <div>
-            Tomemos como ejemplo el sitio web de Tumblr, una pérdida de
-            agudeza (visión borrosa) puede hacer que la barra de búsqueda
-            casi desaparezca en el fondo. Lo mismo puede decirse del botón
-            de inicio de sesión:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/tumbl inaccesible.jpg" alt="tumbl siendo inaccesible" />
-          <br />
-          <h2>Los colores pierden significado</h2>
-
-          <img src="img/accesibilidad_vista_reducida/protanopiagif.gif" alt="Ejemplo con Google" />
-          <br />
-          <div>
-            Alejándose del ejemplo de Tumblr, considera a una persona con
-            daltonismo rojo/azul (protanopia).
-          </div>
-
-          <h2>Presentación de Contenido</h2>
-
-          <div>
-            Ya hemos visto cómo afectan la usabilidad de colores
-            principales. Por fortuna, la gente con impedimentos visuales
-            pueden alterar la representación del contenido de manera que los
-            elementos se vuelvan más accesibles y usables para ellos. Esto
-            se puede lograr por:
-          </div>
-          <ul>
-            <li>🔍 Engrandeciendo el tamaño del texto.</li>
-            <li>🎨 Personalizando contrastes de color.</li>
-            <li>👁‍🗨 Usando lectores de pantalla (ceguera)</li>
-            <li>🎞 Subtítulos o leyendas en videos.</li>
-            <li>📝 Texto de imagen alternativo para describir imágenes.</li>
-          </ul>
-
-          <div>
-            Estos ajustes pueden ser hechos por el navegador web. Además,
-            alteraciones más avanzadas pueden ponerse a disposición a través
-            de extensiones de accesibilidad para el navegador. Ejemplo,
-            Google ha construido varios complementos de accesibilidad para
-            usuarios con impedimentos:
-          </div>
-          <ul>
-            <li>
-              <b>Herramientas de Desarrollador Extensión Accessibility:</b>
-              Agrega una revisión de Accesibilidad y un panel lateral de
-              Accesibilidad en la pestaña de Elementos, para tus
-              Herramientas de Desarrollador de Google.
-            </li>
-            <li>
-              <b>High Contrast:</b> navega la web con tu elección de varios
-              filtros de alto contraste de color diseñados para hacer más
-              fácil leer texto.
-            </li>
-            <li>
-              <b>ChromeVox:</b> trae la velocidad, versatilidad y seguridad
-              a Chrome para usuarios con impedimentos visuales.
-            </li>
-          </ul>
-          <div>
-            High Contrast, por ejemplo, permite a las personas variar el
-            contraste de un sitio web, haciendo el texto más claro de
-            lectura. Aquí está en acción en la página de Spotify:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/spotify contrast.gif" alt="spotify animacion contraste" />
-          <br />
-          <div>
-            Como se aprecia arriba, la extensión del navegador puede,
-            Incrementar contraste, Establecer a escala de grises, Invertir
-            colores, entre otros.
-          </div>
-          <h1>
-            Mejores Prácticas para la implementación de accesibilidad visual
-          </h1>
-          <h3>1. Separar Contenido y Estructura</h3>
-          <div>
-            Es importante que aseguremos que el contenido web es
-            independiente de su estructura subyacente. Cuando los cambios a
-            la presentación pueden incluir tamaño de los elementos (texto e
-            imágenes), el espaciado entre elementos o si los elementos son
-            visibles en absoluto. Como se plantea por la W3C, para hacer que
-            funcionen distintos métodos de navegación (lectores de pantalla
-            o navegación con teclado), los desarrolladores deben asegurar
-            que su código provee una estructura que es independiente de la
-            presentación:
-            <q>"Los desarrolladores necesitan asegurar que la presentación
-              de contenido web es independiente de su estructura subyacente"
-              -- W3C Una estructura sólida también proveerá etiquetas
-              semánticas Como encabezados, párrafos y elementos de lista
-              para asegurar qué, por ejemplo, un lector de pantalla puede
-              interpretar la información y presentarla en una manera
-              alternativa:</q>
-          </div>
-          <br />
-
-          <img
-            src="img/accesibilidad_vista_reducida/Ejemplo de diseño de sitio web usando etiquetas semánticas correctas.png"
-            alt="Ejemplo de diseño de sitio web usando etiquetas semánticas correctas" />
-          <br />
-          <h3>2. Proporciona Alternativas de Texto</h3>
-          <div>
-            Ciertos elementos estructurales, como imágenes, no pueden ser
-            percibidas por algunos usuarios. Ejemplo, la gente ciega usando
-            tecnologías asistentes (lectores de pantalla) para interpretar
-            sitios web escucharán la lectura del texto alternativo atribuido
-            a la imagen, en vez de ver la imagen. Si ese texto no está
-            presente, fracasa en ser lo suficientemente descriptivo, ellos
-            no serán capaces de percibir la información.
-          </div>
-          <br />
-          <div>
-            Ability.net proporciona cinco reglas de oro para usar etiquetas
-            alt (textos alternativos) correctamente para poder hacer un
-            sitio web más accesible:
-          </div>
-          <ul>
-            <i>
-              <li>
-                Cada <img /> debe tener un atributo alt="" Describe la
-                información, no la imagen
-              </li>
-              <li>
-                Las imágenes activas requieres un texto alt descriptivo
-              </li>
-              <li>
-                Las imágenes que contienen información requieren text alt
-                descriptivo
-              </li>
-              <li>
-                Las imágenes decorativas deberían tener texto alt vacío
-              </li>
-            </i>
-          </ul>
-
-          <h3>3. Evita Usar Color para Transmitir Información</h3>
-          <div>
-            Consecuentemente, si un usuario es daltónico, no será capaz de
-            ver esta indicación, así que se vuelve difícil entender cuáles
-            campos tienen errores:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/boot-1.png" alt="ejemplo de ventan con Bootstrap" />
-          <br />
-          <div>
-            El uso de iconos y etiquetas para mostrar qué campos son
-            inválidos comunica mejor la información a un usuario daltónico:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/Daltonismo Ejemplo de Bootstrap v4.png"
-            alt="Ejemplo para Daltonismo para Bootstrap" />
-          <br />
-          <div>
-            Ejemplo de Bootstrap v4 Este ejemplo muestra que el color no
-            debería ser usado por sí mismo para transmitir información,
-            solamente como adición a información existente.
-          </div>
-          <br />
-          <h3>4. Usa Texturas En Vez de Color</h3>
-          <div>
-            Los usuarios daltónicos también podrían encontrar difícil
-            identificar la diferencia entre ciertos colores.
-          </div>
-          <br />
-          <img src="img/accesibilidad_vista_reducida/Cómo perciben los usuarios daltónicos el verde, cafe y rojo.png"
-            alt="Cómo perciben los usuarios daltónicos el verde, cafe y rojo" />
-          <br />
-          <div>
-            Esto no solo ayuda a aquellos que son daltónicos, sino también
-            lo hace más fácil para todos. Considera las etiquetas de Trello
-            como ejemplo de aplicar texturas:
-          </div>
-
-          <img
-            src="img/accesibilidad_vista_reducida/A la derecha, las etiquetas amigables con los daltónicos de Trello.png"
-            alt="A la derecha, las etiquetas amigables con los daltónicos de Trello" />
-          <br />
-          <h3>5. Prueba Esquemas de Color Monocromáticos</h3>
-          <div>
-            Los esquemas de color monocromáticos hacen uso solo de colores
-            con un solo matíz. Ejemplo, creado con paletton.com:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/paletton.png" alt="Muestra monocromática" />
-          <br />
-          <div>
-            Un usuario daltónico podrá ver todos los mismos tonos y
-            contrastes, pero en un matiz diferente:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/BIGSOUND Buzz para daltónicos.png"
-            alt="BIGSOUND Buzz para daltónicos" />
-          <br />
-          <h3>6. Usa Colores Contrastantes para Mejor Legibilidad</h3>
-          <div>
-            El contraste es la diferencia entre el color más claro y el
-            color más oscuro. Por ejemplo, considera esta tabla de
-            sensibilidad de contraste:
-          </div>
-
-          <img src="img/accesibilidad_vista_reducida/abc.png" alt="Muestra del cambio de contraste en las letras" />
-          <br />
-          <div>
-            El superior izquierdo (letra A) tiene el mayor contraste, cuando
-            observamos a la derecha, el contraste disminuye. Eventualmente,
-            dependiendo de la sensibilidad de contraste de una persona, no
-            serán capaces de distinguir el siguiente texto del fondo.
+            <h1>Diseñando para Discapacidad Visual</h1>
             <br />
-            Para asegurar que el texto es legible por personas con
-            impedimentos visuales, la WCAG ha provisto una directriz de
-            proporción de contraste. Ellos sugieren que una proporción de
-            contraste de al menos 4.5:1 debe existir entre el texto y su
-            fondo. Esta proporción baja a 3:1 para texto más grande (24px o
-            29px negrita)
+            <p>
+              Existe un 4.5% de la población total que experimenta
+              daltonismo,entre ellos 4% sufriendo de debilidad visual y otro
+              0.6% siendo ciegos, las dificultades visuales cuando se usa la
+              web son más predominantes de lo que visual podrías estimar. Con
+              este trabajo se contempla cómo diseñar o adaptar webs para
+              personas con discapacidades visuales puede mejorar la web para
+              todos.
+            </p>
             <br />
-            Un ejemplo de esta proporción es mostrado en los ejemplos de
-            abajo, de accessebility.psu.edu:
-          </div>
 
-          <h1>Los Diseños Inclusivos Mejoran el Producto para Todos</h1>
-          <div>
-            En general, diseñando siendo e inclusivo de las discapacidades
-            más extremas, siempre mejora el producto final para todos los
-            demás. Adicionalmente, asegurar que el color solo es usado para
-            resaltar lo que ya es visible es otro gran paso para construir
-            un sitio altamente accesible y por lo tanto usable. Un útil
-            proceso de diseño puede entonces ser implementado en iteraciones
-            tempranas de un producto en escala de grises y después aplicar
-            color al final.
+            <h2>Accesibilidad para Todos</h2>
+            <p>Las discapacidades visuales más comunes pueden ser:</p>
+
+            <h2>Daltonismo</h2>
+            <br />
+            El Daltonismo involucra la dificultad de percibir o distinguir
+            entre colores, la sensibilidad al brillo de color,entre otros.
+            Afecta a aproximadamente 4.5% de la población mundial total.
+
+            <img alt="Vista de daltonismo" src="img/accesibilidad_vista_reducida/Daltonismo.png" />
+            <br />
+            <h2>Debilidad Visual</h2>
+
+            <div>
+              debilidad visual puede incluir vista parcial en los ojos,
+              agudeza pobre (visión borrosa), visión de túnel, pérdida del
+              campo central y visión nublada.
+            </div>
+            <img alt="" src="img/accesibilidad_vista_reducida/Debilidad Visual.png" />
+            <br />
+            <h2>Ceguera</h2>
+
+            <div>
+              Ceguera es la pérdida sustancial de la visión en ambos ojos de
+              una persona.
+            </div>
+
+            <h2>Personas Perciben la Web de Manera Diferente</h2>
+
+            <div>
+              La naturaleza diversa de estas discapacidades puede crear una
+              amplia variación de cómo las páginas web son percibidas por
+              personas con habilidades y capacidades visuales diferentes.
+              Debemos asegurarnos de que pueden acceder e interpretar todas
+              las características de la misma manera.
+            </div>
+            <h2>
+              Viendo la Página de Inicio de Tumblr Con Discapacidades Visuales
+            </h2>
+            <div>
+              Como ejemplo, considera la página de inicio de Tumblr, en donde
+              el fondo de la página es una imagen grande (creada por sus
+              usuarios):
+            </div>
+            <br />
+            <img alt="Pagina de incio Tumblr"
+              src="img/accesibilidad_vista_reducida/La Página de Inicio de Tumblr.jpg" />
+            <br />
+            <div>
+              Dependiendo del tipo y nivel de discapacidad visual que una
+              persona pudiera tener, el sitio podría ser percibido en una
+              cantidad de maneras:
+            </div>
+
+            <h4>1. Visión periférica bloqueada (e.g. glaucoma)</h4>
+
+            <img src="img/accesibilidad_vista_reducida/Visión periférica bloqueada (e.g. glaucoma).jpg"
+              alt="Visión periférica bloqueada (e.g. glaucoma)" />
+            <br />
+            <h4>
+              2. Grandes espacios de visión bloqueada (retinopatía diabética)
+            </h4>
+
+            <img src="img/accesibilidad_vista_reducida/Grandes espacios de visión bloqueada (retinopatía diabética).jpg"
+              alt="Grandes espacios de visión bloqueada (retinopatía diabética)" />
+            <br />
+            <h4>3. Pérdida de agudeza (visión borrosa)</h4>
+
+            <img src="img/accesibilidad_vista_reducida/Pérdida de agudeza (visión borrosa).jpg"
+              alt="Pérdida de agudeza (visión borrosa)" />
+            <br />
+            <h4>4. Problemas de espectros</h4>
+
+            <img src="img/accesibilidad_vista_reducida/Problemas de espectros.jpg" alt="Problemas de espectros" />
+            <br />
+            <h4>5. Daltonismo con Tritanopia</h4>
+
+            <img src="img/accesibilidad_vista_reducida/Daltonismo con Tritanopía.jpg" alt="Daltonismo con Tritanopía" />
+            <br />
+            <div>
+              Los ejemplos de arriba muestran distintos tipos de discapacidad
+              de debilidad visual y ejemplos de daltonismo. Retomando:
+            </div>
+            <br />
+            <ul>
+              <li>
+                La visión de túnel (imagen 1) es un tipo de bloqueo de visión
+                periférica, la cuál reduce la cantidad de elementos visibles
+                en la pantalla. El usuario solo puede ver elementos centrales.
+              </li>
+              <li>
+                La pérdida de agudeza, o visión borrosa (imagen 3), hace al
+                texto difícil de leer, ya que se vuelve borroso para el
+                usuario.
+              </li>
+
+              <li>
+                El daltonismo (imagen 5) reduce el número de colores que un
+                usuario puede ver, así que hay más probabilidad de que los
+                elementos luzcan similares.
+              </li>
+            </ul>
+
+            <h2>Variaciones en la Percepción Afecta a la Usabilidad.</h2>
+
+            <div>
+              Debido a estas variaciones en la percepción, los elementos clave
+              de un sitio web dado pueden volverse menos accesibles
+              dependiendo del grado de la discapacidad visual del usuario.
+            </div>
+
+            <h4>Características inaccesibles</h4>
+
+            <div>
+              Tomemos como ejemplo el sitio web de Tumblr, una pérdida de
+              agudeza (visión borrosa) puede hacer que la barra de búsqueda
+              casi desaparezca en el fondo. Lo mismo puede decirse del botón
+              de inicio de sesión:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/tumbl inaccesible.jpg" alt="tumbl siendo inaccesible" />
+            <br />
+            <h2>Los colores pierden significado</h2>
+
+            <img src="img/accesibilidad_vista_reducida/protanopiagif.gif" alt="Ejemplo con Google" />
+            <br />
+            <div>
+              Alejándose del ejemplo de Tumblr, considera a una persona con
+              daltonismo rojo/azul (protanopia).
+            </div>
+
+            <h2>Presentación de Contenido</h2>
+
+            <div>
+              Ya hemos visto cómo afectan la usabilidad de colores
+              principales. Por fortuna, la gente con impedimentos visuales
+              pueden alterar la representación del contenido de manera que los
+              elementos se vuelvan más accesibles y usables para ellos. Esto
+              se puede lograr por:
+            </div>
+            <ul>
+              <li>🔍 Engrandeciendo el tamaño del texto.</li>
+              <li>🎨 Personalizando contrastes de color.</li>
+              <li>👁‍🗨 Usando lectores de pantalla (ceguera)</li>
+              <li>🎞 Subtítulos o leyendas en videos.</li>
+              <li>📝 Texto de imagen alternativo para describir imágenes.</li>
+            </ul>
+
+            <div>
+              Estos ajustes pueden ser hechos por el navegador web. Además,
+              alteraciones más avanzadas pueden ponerse a disposición a través
+              de extensiones de accesibilidad para el navegador. Ejemplo,
+              Google ha construido varios complementos de accesibilidad para
+              usuarios con impedimentos:
+            </div>
+            <ul>
+              <li>
+                <b>Herramientas de Desarrollador Extensión Accessibility:</b>
+                Agrega una revisión de Accesibilidad y un panel lateral de
+                Accesibilidad en la pestaña de Elementos, para tus
+                Herramientas de Desarrollador de Google.
+              </li>
+              <li>
+                <b>High Contrast:</b> navega la web con tu elección de varios
+                filtros de alto contraste de color diseñados para hacer más
+                fácil leer texto.
+              </li>
+              <li>
+                <b>ChromeVox:</b> trae la velocidad, versatilidad y seguridad
+                a Chrome para usuarios con impedimentos visuales.
+              </li>
+            </ul>
+            <div>
+              High Contrast, por ejemplo, permite a las personas variar el
+              contraste de un sitio web, haciendo el texto más claro de
+              lectura. Aquí está en acción en la página de Spotify:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/spotify contrast.gif" alt="spotify animacion contraste" />
+            <br />
+            <div>
+              Como se aprecia arriba, la extensión del navegador puede,
+              Incrementar contraste, Establecer a escala de grises, Invertir
+              colores, entre otros.
+            </div>
+            <h1>
+              Mejores Prácticas para la implementación de accesibilidad visual
+            </h1>
+            <h3>1. Separar Contenido y Estructura</h3>
+            <div>
+              Es importante que aseguremos que el contenido web es
+              independiente de su estructura subyacente. Cuando los cambios a
+              la presentación pueden incluir tamaño de los elementos (texto e
+              imágenes), el espaciado entre elementos o si los elementos son
+              visibles en absoluto. Como se plantea por la W3C, para hacer que
+              funcionen distintos métodos de navegación (lectores de pantalla
+              o navegación con teclado), los desarrolladores deben asegurar
+              que su código provee una estructura que es independiente de la
+              presentación:
+              <q>"Los desarrolladores necesitan asegurar que la presentación
+                de contenido web es independiente de su estructura subyacente"
+                -- W3C Una estructura sólida también proveerá etiquetas
+                semánticas Como encabezados, párrafos y elementos de lista
+                para asegurar qué, por ejemplo, un lector de pantalla puede
+                interpretar la información y presentarla en una manera
+                alternativa:</q>
+            </div>
+            <br />
+
+            <img
+              src="img/accesibilidad_vista_reducida/Ejemplo de diseño de sitio web usando etiquetas semánticas correctas.png"
+              alt="Ejemplo de diseño de sitio web usando etiquetas semánticas correctas" />
+            <br />
+            <h3>2. Proporciona Alternativas de Texto</h3>
+            <div>
+              Ciertos elementos estructurales, como imágenes, no pueden ser
+              percibidas por algunos usuarios. Ejemplo, la gente ciega usando
+              tecnologías asistentes (lectores de pantalla) para interpretar
+              sitios web escucharán la lectura del texto alternativo atribuido
+              a la imagen, en vez de ver la imagen. Si ese texto no está
+              presente, fracasa en ser lo suficientemente descriptivo, ellos
+              no serán capaces de percibir la información.
+            </div>
+            <br />
+            <div>
+              Ability.net proporciona cinco reglas de oro para usar etiquetas
+              alt (textos alternativos) correctamente para poder hacer un
+              sitio web más accesible:
+            </div>
+            <ul>
+              <i>
+                <li>
+                  Cada <img /> debe tener un atributo alt="" Describe la
+                  información, no la imagen
+                </li>
+                <li>
+                  Las imágenes activas requieres un texto alt descriptivo
+                </li>
+                <li>
+                  Las imágenes que contienen información requieren text alt
+                  descriptivo
+                </li>
+                <li>
+                  Las imágenes decorativas deberían tener texto alt vacío
+                </li>
+              </i>
+            </ul>
+
+            <h3>3. Evita Usar Color para Transmitir Información</h3>
+            <div>
+              Consecuentemente, si un usuario es daltónico, no será capaz de
+              ver esta indicación, así que se vuelve difícil entender cuáles
+              campos tienen errores:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/boot-1.png" alt="ejemplo de ventan con Bootstrap" />
+            <br />
+            <div>
+              El uso de iconos y etiquetas para mostrar qué campos son
+              inválidos comunica mejor la información a un usuario daltónico:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/Daltonismo Ejemplo de Bootstrap v4.png"
+              alt="Ejemplo para Daltonismo para Bootstrap" />
+            <br />
+            <div>
+              Ejemplo de Bootstrap v4 Este ejemplo muestra que el color no
+              debería ser usado por sí mismo para transmitir información,
+              solamente como adición a información existente.
+            </div>
+            <br />
+            <h3>4. Usa Texturas En Vez de Color</h3>
+            <div>
+              Los usuarios daltónicos también podrían encontrar difícil
+              identificar la diferencia entre ciertos colores.
+            </div>
+            <br />
+            <img src="img/accesibilidad_vista_reducida/Cómo perciben los usuarios daltónicos el verde, cafe y rojo.png"
+              alt="Cómo perciben los usuarios daltónicos el verde, cafe y rojo" />
+            <br />
+            <div>
+              Esto no solo ayuda a aquellos que son daltónicos, sino también
+              lo hace más fácil para todos. Considera las etiquetas de Trello
+              como ejemplo de aplicar texturas:
+            </div>
+
+            <img
+              src="img/accesibilidad_vista_reducida/A la derecha, las etiquetas amigables con los daltónicos de Trello.png"
+              alt="A la derecha, las etiquetas amigables con los daltónicos de Trello" />
+            <br />
+            <h3>5. Prueba Esquemas de Color Monocromáticos</h3>
+            <div>
+              Los esquemas de color monocromáticos hacen uso solo de colores
+              con un solo matíz. Ejemplo, creado con paletton.com:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/paletton.png" alt="Muestra monocromática" />
+            <br />
+            <div>
+              Un usuario daltónico podrá ver todos los mismos tonos y
+              contrastes, pero en un matiz diferente:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/BIGSOUND Buzz para daltónicos.png"
+              alt="BIGSOUND Buzz para daltónicos" />
+            <br />
+            <h3>6. Usa Colores Contrastantes para Mejor Legibilidad</h3>
+            <div>
+              El contraste es la diferencia entre el color más claro y el
+              color más oscuro. Por ejemplo, considera esta tabla de
+              sensibilidad de contraste:
+            </div>
+
+            <img src="img/accesibilidad_vista_reducida/abc.png" alt="Muestra del cambio de contraste en las letras" />
+            <br />
+            <div>
+              El superior izquierdo (letra A) tiene el mayor contraste, cuando
+              observamos a la derecha, el contraste disminuye. Eventualmente,
+              dependiendo de la sensibilidad de contraste de una persona, no
+              serán capaces de distinguir el siguiente texto del fondo.
+              <br />
+              Para asegurar que el texto es legible por personas con
+              impedimentos visuales, la WCAG ha provisto una directriz de
+              proporción de contraste. Ellos sugieren que una proporción de
+              contraste de al menos 4.5:1 debe existir entre el texto y su
+              fondo. Esta proporción baja a 3:1 para texto más grande (24px o
+              29px negrita)
+              <br />
+              Un ejemplo de esta proporción es mostrado en los ejemplos de
+              abajo, de accessebility.psu.edu:
+            </div>
+
+            <h1>Los Diseños Inclusivos Mejoran el Producto para Todos</h1>
+            <div>
+              En general, diseñando siendo e inclusivo de las discapacidades
+              más extremas, siempre mejora el producto final para todos los
+              demás. Adicionalmente, asegurar que el color solo es usado para
+              resaltar lo que ya es visible es otro gran paso para construir
+              un sitio altamente accesible y por lo tanto usable. Un útil
+              proceso de diseño puede entonces ser implementado en iteraciones
+              tempranas de un producto en escala de grises y después aplicar
+              color al final.
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accesibilidad Motora / Indexación
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-      data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-        <h3>Accesibilidad Motora</h3>
-        <p>
-          ¿Qué sucede con las discapacidades motrices?
-          Sí, las discapacidades físicas o de funciones motrices van desde quienes prefieren
-          no usar mouse, porque tal vez sufrieron LER (lesiones por esfuerzo repetitivo) u otra cosa
-          y les resulta doloroso, hasta alguien que puede tener parálisis física y tiene rango de
-          movimiento limitado en ciertas partes del cuerpo.
-        </p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accesibilidad Motora / Indexación
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h3>Accesibilidad Motora</h3>
+          <p>
+            ¿Qué sucede con las discapacidades motrices?
+            Sí, las discapacidades físicas o de funciones motrices van desde quienes prefieren
+            no usar mouse, porque tal vez sufrieron LER (lesiones por esfuerzo repetitivo) u otra cosa
+            y les resulta doloroso, hasta alguien que puede tener parálisis física y tiene rango de
+            movimiento limitado en ciertas partes del cuerpo.
+          </p>
 
-        <img src="/img/accmot1.JPG">
+          <img src="/img/accmot1.JPG">
 
-        <p>
-          Los usuarios con discapacidad motriz usan teclado, dispositivo de interrupción, control
-          de voz o hasta un dispositivo de rastreo ocular para interactuar con su computadora.
-          Similar a lo que sucede con las discapacidades visuales, las de movilidad también pueden
-          ser un problema temporal o circunstancial: Tal vez se te lesionó la muñeca de la mano del
-          mouse. Tal vez el panel tácil de tu laptop se rompió o está inestable. Puede haber muchas
-          situaciones en las que la movilidad de un usuario se ve dificultada y, asegurándonos de
-          atenderlo, mejoramos la experiencia general, para todas las personas que tengan una
-          discapacidad permanente y para quienes descubren que, temporalmente, no pueden usar una IU
-          basada en cursor.
-        </p>
+          <p>
+            Los usuarios con discapacidad motriz usan teclado, dispositivo de interrupción, control
+            de voz o hasta un dispositivo de rastreo ocular para interactuar con su computadora.
+            Similar a lo que sucede con las discapacidades visuales, las de movilidad también pueden
+            ser un problema temporal o circunstancial: Tal vez se te lesionó la muñeca de la mano del
+            mouse. Tal vez el panel tácil de tu laptop se rompió o está inestable. Puede haber muchas
+            situaciones en las que la movilidad de un usuario se ve dificultada y, asegurándonos de
+            atenderlo, mejoramos la experiencia general, para todas las personas que tengan una
+            discapacidad permanente y para quienes descubren que, temporalmente, no pueden usar una IU
+            basada en cursor.
+          </p>
 
-        <img src="/img/accmot2.JPG">
+          <img src="/img/accmot2.JPG">
 
-        <p>
-          El objetivo final es poder ofrecer a todos los usuarios la posibilidad de acceder, navegar,
-          informarse e interactuar en las distintas webs que existen en la red.
-          Para ello, se deben tomar en cuenta las necesidades de cada grupo de personas, con la finalidad
-          de ofrecer soluciones que deriven en un acceso universal, usable, claro e independiente.
-          Lo primero que debemos tomar en cuenta es que existen distintas causas por la que los usuarios
-          pueden tener discapacidad motora y, a partir de allí, ofrecer de forma efectiva, una solución
-          que permita eliminar las barreras que impiden el libre acceso a la web.
-          Algunas de las referencias más comunes de usuarios con discapacidad motora son:
-          Personas que tengan miembros amputado.
-          Personas que tengan alguna patología que cause dolor o limitación en las articulaciones (reumatismo,
-          artritis, etc.).
-          Personas mayores o con dificultad de motricidad fina (temblores en miembros superiores).
-          Personas con distrofia muscular.
-          Personas con poca destreza o con poca coordinación existente entre el ojo y la mano.
-          Personas con lesiones medulares (paraplejías o tetraplejía).
-          Tomando en cuenta el último punto, vale la pena recalcar que, aquellas personas que convivan con
-          alteraciones o trastorno de tipo neurológico, muy posiblemente, puedan verse diagnosticadas con una
-          discapacidad motora parcial o permanente que resulta de su patología.
-        </p>
+          <p>
+            El objetivo final es poder ofrecer a todos los usuarios la posibilidad de acceder, navegar,
+            informarse e interactuar en las distintas webs que existen en la red.
+            Para ello, se deben tomar en cuenta las necesidades de cada grupo de personas, con la finalidad
+            de ofrecer soluciones que deriven en un acceso universal, usable, claro e independiente.
+            Lo primero que debemos tomar en cuenta es que existen distintas causas por la que los usuarios
+            pueden tener discapacidad motora y, a partir de allí, ofrecer de forma efectiva, una solución
+            que permita eliminar las barreras que impiden el libre acceso a la web.
+            Algunas de las referencias más comunes de usuarios con discapacidad motora son:
+            Personas que tengan miembros amputado.
+            Personas que tengan alguna patología que cause dolor o limitación en las articulaciones (reumatismo,
+            artritis, etc.).
+            Personas mayores o con dificultad de motricidad fina (temblores en miembros superiores).
+            Personas con distrofia muscular.
+            Personas con poca destreza o con poca coordinación existente entre el ojo y la mano.
+            Personas con lesiones medulares (paraplejías o tetraplejía).
+            Tomando en cuenta el último punto, vale la pena recalcar que, aquellas personas que convivan con
+            alteraciones o trastorno de tipo neurológico, muy posiblemente, puedan verse diagnosticadas con una
+            discapacidad motora parcial o permanente que resulta de su patología.
+          </p>
 
-        <img src="/img/accmot3.JPG">
+          <img src="/img/accmot3.JPG">
 
-        <p>
-          Guía de accesibilidad web para personas con discapacidad motora.
-          Si somos capaces de cumplir con las distintas pautas, estándares y normativas de accesibilidad web,
-          podemos garantizar el buen funcionamiento de distintas ayudas técnicas que permiten la autonomía y
-          accesibilidad a este grupo de personas que comúnmente se caracterizan por:
-          Sustituir el ratón por controles de teclado.
-          Encuentran dificultad para hacer clic en la página.
-          Encuentran dificultad o se les imposibilita utilizar ambas manos.
-          Escriben o navegan en internet de una manera muy lenta.
-          Siendo consciente de estos importantes aspectos nos preguntamos: ¿Cómo podemos garantizar la
-          accesibilidad web para este grupo de personas?
-          Lo más esencial a la hora de cumplir con los criterios de accesibilidad web para personas con
-          discapacidad motora, es tener siempre presente, que la web debe permitir una navegación óptima desde
-          los siguiente aspectos clave: reconocimiento de voz, sonidos, uso amplio del teclado y pulsador.
-          Consejos para hacer una web accesible a personas con discapacidad motora:
-          La web debe admitir controles de teclado.
-          La forma en que introduce el contenido debe ser accesible para los distintos lectores u otras
-          herramientas de apoyo que por lo general utilizan las personas con discapacidad motora.
-          Todas las órdenes deben poder activarse pulsando teclas únicas. Toma en cuenta que muchas veces pueden
-          pulsar una tecla por vez.
-          La web debe responder por controles de voz, pies, boca o rastreadores de movimientos oculares.
-          Los usuarios deben poder navegar siempre con la posibilidad de saltarse las barras de navegación,
-          encabezado de página y otros bloques sin necesidad de utilizar el ratón.
-          Sabemos de la importancia que tiene el cumplimiento de las normativas de accesibilidad web y de cómo
-          ésta puede impactar de forma positiva en el desarrollo personal, profesional y productivo de cada
-          grupo, en especial la comunidad de las personas con discapacidad motora.
-          Podrán acceder de forma eficiente a la información de valor que día a día se comparte en las webs.
+          <p>
+            Guía de accesibilidad web para personas con discapacidad motora.
+            Si somos capaces de cumplir con las distintas pautas, estándares y normativas de accesibilidad web,
+            podemos garantizar el buen funcionamiento de distintas ayudas técnicas que permiten la autonomía y
+            accesibilidad a este grupo de personas que comúnmente se caracterizan por:
+            Sustituir el ratón por controles de teclado.
+            Encuentran dificultad para hacer clic en la página.
+            Encuentran dificultad o se les imposibilita utilizar ambas manos.
+            Escriben o navegan en internet de una manera muy lenta.
+            Siendo consciente de estos importantes aspectos nos preguntamos: ¿Cómo podemos garantizar la
+            accesibilidad web para este grupo de personas?
+            Lo más esencial a la hora de cumplir con los criterios de accesibilidad web para personas con
+            discapacidad motora, es tener siempre presente, que la web debe permitir una navegación óptima desde
+            los siguiente aspectos clave: reconocimiento de voz, sonidos, uso amplio del teclado y pulsador.
+            Consejos para hacer una web accesible a personas con discapacidad motora:
+            La web debe admitir controles de teclado.
+            La forma en que introduce el contenido debe ser accesible para los distintos lectores u otras
+            herramientas de apoyo que por lo general utilizan las personas con discapacidad motora.
+            Todas las órdenes deben poder activarse pulsando teclas únicas. Toma en cuenta que muchas veces pueden
+            pulsar una tecla por vez.
+            La web debe responder por controles de voz, pies, boca o rastreadores de movimientos oculares.
+            Los usuarios deben poder navegar siempre con la posibilidad de saltarse las barras de navegación,
+            encabezado de página y otros bloques sin necesidad de utilizar el ratón.
+            Sabemos de la importancia que tiene el cumplimiento de las normativas de accesibilidad web y de cómo
+            ésta puede impactar de forma positiva en el desarrollo personal, profesional y productivo de cada
+            grupo, en especial la comunidad de las personas con discapacidad motora.
+            Podrán acceder de forma eficiente a la información de valor que día a día se comparte en las webs.
 
-        </p>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        Accesibilidad Cognitiva
-      </button>
-    </h2>
-    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-      data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-        <h1>Hablemos de accesibilidad cognitiva</h1>
-        <img src="img/presentacion.ac.jpg" alt="">
-        <br>
-        <a href=”https://youtu.be/Zev3810FZG8”>¿Que sabemos de accesibilidad cognitiva?(Ver video)</a>
-        <br>
-        <p> La accesibilidad cognitiva es la condición que deben cumplir los textos, carteles, tecnología y
-          pictogramas para que todas
-          las personas puedan entenderlos fácilmente. Es decir, la accesibilidad cognitiva pretende hacer el mundo más
-          fácil de entender.
-          Forma parte de la accesibilidad universal, junto a la accesibilidad física y la accesibilidad sensorial,
-          esta pensada para
-          personas con discapacidad intelectual o con autismo, le hace la vida más fácil a todo el mundo: niños,
-          mayores, ancianos
-          y/o personas de otros países que hablan una lengua diferente.
-          La apuesta por la tecnología accesible es sinónimo de facilidad en el uso de los dispositivos y aparatos
-          electrónicos que usamos diariamente, como el móvil o la computadora en el trabajo, o la lavadora en nuestra
-          casa.
-          La accesibilidad cognitiva permite, por ejemplo, que el proceso de compra online de una empresa de
-          e-commerce sea sencillo
-          o que la lavadora tenga una programación intuitiva, de modo que su funcionamiento sea fácil y comprensible
-          para cualquier persona.
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          Accesibilidad Cognitiva
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h1>Hablemos de accesibilidad cognitiva</h1>
+          <img src="img/presentacion.ac.jpg" alt="">
+          <br>
+          <a href=”https://youtu.be/Zev3810FZG8”>¿Que sabemos de accesibilidad cognitiva?(Ver video)</a>
+          <br>
+          <p> La accesibilidad cognitiva es la condición que deben cumplir los textos, carteles, tecnología y
+            pictogramas para que todas
+            las personas puedan entenderlos fácilmente. Es decir, la accesibilidad cognitiva pretende hacer el mundo más
+            fácil de entender.
+            Forma parte de la accesibilidad universal, junto a la accesibilidad física y la accesibilidad sensorial,
+            esta pensada para
+            personas con discapacidad intelectual o con autismo, le hace la vida más fácil a todo el mundo: niños,
+            mayores, ancianos
+            y/o personas de otros países que hablan una lengua diferente.
+            La apuesta por la tecnología accesible es sinónimo de facilidad en el uso de los dispositivos y aparatos
+            electrónicos que usamos diariamente, como el móvil o la computadora en el trabajo, o la lavadora en nuestra
+            casa.
+            La accesibilidad cognitiva permite, por ejemplo, que el proceso de compra online de una empresa de
+            e-commerce sea sencillo
+            o que la lavadora tenga una programación intuitiva, de modo que su funcionamiento sea fácil y comprensible
+            para cualquier persona.
 
-        </p>
+          </p>
 
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        Compatibilidad con agentes de Usuario
-      </button>
-    </h2>
-    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-      data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-        <div class="section-heading">
-              <h2 id="tema">Agentes de usuario</h2>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          Compatibilidad con agentes de Usuario
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="section-heading">
+            <h2 id="tema">Agentes de usuario</h2>
           </div>
-      
+
           <img src="img/Compatibilidad/navegadores-mercado.jpg" alt="Imagen navegadores">
           <br>
           <h3 id="tema">¿Que es un agente de usuario?</h3>
-      
-          <p>Cuando navegamos por Internet dejamos rastro. Esto es algo evidente que los usuarios saben. Siempre que visitamos
-              una página web podemos enviar información relacionada con nuestra conexión o el dispositivo que estamos usando.
-              Esto no quiere decir que todo sea negativo, ya que algunos datos van a ser necesarios para recibir un mejor
-              servicio. Sin embargo sí es cierto que la privacidad a veces está en juego y conviene tomar precauciones. En
-              este artículo vamos a hablar de qué significa User-Agent o Agente de Usuario. Es un término muy relacionado con
-              lo que hablamos.</p>
-      
+
+          <p>Cuando navegamos por Internet dejamos rastro. Esto es algo evidente que los usuarios saben. Siempre que
+            visitamos
+            una página web podemos enviar información relacionada con nuestra conexión o el dispositivo que estamos
+            usando.
+            Esto no quiere decir que todo sea negativo, ya que algunos datos van a ser necesarios para recibir un mejor
+            servicio. Sin embargo sí es cierto que la privacidad a veces está en juego y conviene tomar precauciones. En
+            este artículo vamos a hablar de qué significa User-Agent o Agente de Usuario. Es un término muy relacionado
+            con
+            lo que hablamos.</p>
+
           <h3 id="tema">Compatibilidad</h3>
-      
-          <p> Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas.
-      
-              Para que todas las medidas de accesibilidad vistas en los otros principios sean efectivas, es fundamental que
-              aseguremos la compatibilidad del código con los agentes de usuario tanto actuales como futuros, incluyendo
-              también los productos de apoyo.</p>
-      
+
+          <p> Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas
+            técnicas.
+
+            Para que todas las medidas de accesibilidad vistas en los otros principios sean efectivas, es fundamental
+            que
+            aseguremos la compatibilidad del código con los agentes de usuario tanto actuales como futuros, incluyendo
+            también los productos de apoyo.</p>
+
           <p> Esto lo podemos lograr de dos formas: </p>
-      
+
           <p> > Evitando malas prácticas que puedan provocar que los productos de apoyo no interpreten correctamente el
-              contenido (p. ej. por usar un marcado incorrecto) o que incluso lo lleguen a ignorar (p. ej. por usar un marcado
-              propietario) </p>
-      
-          <p> > Proporcionar la información en el contenido mediante marcado estándar de forma que los productos de apoyo
-              puedan reconocer dicho contenido e interactuar con él.</p>
+            contenido (p. ej. por usar un marcado incorrecto) o que incluso lo lleguen a ignorar (p. ej. por usar un
+            marcado
+            propietario) </p>
+
+          <p> > Proporcionar la información en el contenido mediante marcado estándar de forma que los productos de
+            apoyo
+            puedan reconocer dicho contenido e interactuar con él.</p>
           <br>
           <i>"Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas
-              técnicas"</i>
-      
+            técnicas"</i>
+
           <h3 id="tema">Objetivo</h3>
           <p> Asegurar que los agentes de usuario y productos de apoyo puedan interpretar correctamente y procesar el
-              contenido.</p>
-          <p>Cuando hablamos de procesar el contenido nos referimos a transformar la entrada de texto en una estructura de
-              datos adecuada para ser interpretada y manejada por los agentes de usuario. Para (X)HTML la estructura de datos
-              usada para representar el contenido es un árbol en el que las etiquetas (elementos) son los nodos del mismo.</p>
-          <p> Cuando el código es incorrecto, los agentes de usuario suelen usar técnicas de reparación de código. Sin
-              embargo, estas técnicas pueden variar entre unos agentes de usuario y otros, pudiendo dar lugar a resultados
-              dispares.</p>
-          <p> Cuando el código es incorrecto, los agentes de usuario suelen usar técnicas de reparación de código. Sin
-              embargo, estas técnicas pueden variar entre unos agentes de usuario y otros, pudiendo dar lugar a resultados
-              dispares.</p>
-          <p>Si el código no se puede procesar correctamente entonces puede ocurrir que algunos agentes de usuario sean
-              incapaces de interpretar el código y presentar el contenido o
-              diferentes agentes de usuario interpreten el código de forma distinta (variando la estructura de datos) y como
-              resultado muestren diferentes contenidos</p>
-      
-          <h3 id="tema">¿Cómo lograrlo?</h3>
-      
-          <h4 id="tema">Asegurar que las paginas web puedan ser procesadas</h4>
-      
-          <p>El objetivo principal es evitar errores en el código que causen problemas a los productos de apoyo cuando traten
-              de procesar el contenido.
-      
-              Para evitar estos problemas no es imprescindible que el código sea válido según la gramática formal usada, o que
-              cumpla al completo con la especificación. Podemos evitar la gran mayoría de errores de procesamiento si al menos
-              la apertura y cierre de etiquetas se hace según la especificación o si los documentos están bien formados (XML).
+            contenido.</p>
+          <p>Cuando hablamos de procesar el contenido nos referimos a transformar la entrada de texto en una estructura
+            de
+            datos adecuada para ser interpretada y manejada por los agentes de usuario. Para (X)HTML la estructura de
+            datos
+            usada para representar el contenido es un árbol en el que las etiquetas (elementos) son los nodos del mismo.
           </p>
-      
+          <p> Cuando el código es incorrecto, los agentes de usuario suelen usar técnicas de reparación de código. Sin
+            embargo, estas técnicas pueden variar entre unos agentes de usuario y otros, pudiendo dar lugar a resultados
+            dispares.</p>
+          <p> Cuando el código es incorrecto, los agentes de usuario suelen usar técnicas de reparación de código. Sin
+            embargo, estas técnicas pueden variar entre unos agentes de usuario y otros, pudiendo dar lugar a resultados
+            dispares.</p>
+          <p>Si el código no se puede procesar correctamente entonces puede ocurrir que algunos agentes de usuario sean
+            incapaces de interpretar el código y presentar el contenido o
+            diferentes agentes de usuario interpreten el código de forma distinta (variando la estructura de datos) y
+            como
+            resultado muestren diferentes contenidos</p>
+
+          <h3 id="tema">¿Cómo lograrlo?</h3>
+
+          <h4 id="tema">Asegurar que las paginas web puedan ser procesadas</h4>
+
+          <p>El objetivo principal es evitar errores en el código que causen problemas a los productos de apoyo cuando
+            traten
+            de procesar el contenido.
+
+            Para evitar estos problemas no es imprescindible que el código sea válido según la gramática formal usada, o
+            que
+            cumpla al completo con la especificación. Podemos evitar la gran mayoría de errores de procesamiento si al
+            menos
+            la apertura y cierre de etiquetas se hace según la especificación o si los documentos están bien formados
+            (XML).
+          </p>
+
           <p>En HTML, asegurar que la apertura y cierre de etiquetas sigue la especificación.</p>
           <p> Esto implica que para los elementos se debe cumplir: </p>
           <p> > Existencia etiquetas de cierre para todos los elementos que las requieran. </p>
           <p> > No existencia de etiquetas de cierre para aquellos elementos en las que están prohibidas.</p>
           <p> > Las etiquetas de apertura y cierre se deben anidar correctamente para todos los elementos.</p>
-          <p>De igual forma, al indicar los valores de los atributos debemos hacerlo correctamente (apertura y cierre del
-              entrecomillado)</p>
+          <p>De igual forma, al indicar los valores de los atributos debemos hacerlo correctamente (apertura y cierre
+            del
+            entrecomillado)</p>
           <p>En XHTML, asegurar que las páginas web están bien formadas</p>
           <p>Como XHTML es un lenguaje basado en XML, podemos usar un parseador de XML que verifique que no se producen
-              errores al comprobar si el documento está bien formado.
-      
-              En determinados lenguajes, algunos elementos y/o atributos deben tener un valor único. En caso contrario, al
-              procesar el contenido los resultados pueden ser inconsistentes. Si los valores de los atributos id no son únicos
-              se imposibilita la identificación del contenido de forma unívoca. Esto es especialmente problemático cuando se
-              establecen relaciones entre el contenido y las referencias apuntan a identificadores repetidos. Por ejemplo, al
-              relacionar etiquetas y campos de formulario o las celdas de datos y celdas de encabezado en las tablas de datos.
-      
-              De igual forma, las referencias a identificadores inexistentes también es problemática. Por ejemplo, un
-              <b>label</b>
-              que en su atributo for haga referencia a un campo de formulario que no existe, o una celda de datos que en
-              su atributo headers indique encabezados inexistentes.
+            errores al comprobar si el documento está bien formado.
+
+            En determinados lenguajes, algunos elementos y/o atributos deben tener un valor único. En caso contrario, al
+            procesar el contenido los resultados pueden ser inconsistentes. Si los valores de los atributos id no son
+            únicos
+            se imposibilita la identificación del contenido de forma unívoca. Esto es especialmente problemático cuando
+            se
+            establecen relaciones entre el contenido y las referencias apuntan a identificadores repetidos. Por ejemplo,
+            al
+            relacionar etiquetas y campos de formulario o las celdas de datos y celdas de encabezado en las tablas de
+            datos.
+
+            De igual forma, las referencias a identificadores inexistentes también es problemática. Por ejemplo, un
+            <b>label</b>
+            que en su atributo for haga referencia a un campo de formulario que no existe, o una celda de datos que en
+            su atributo headers indique encabezados inexistentes.
           </p>
-      
+
           <h4 id="tema">Validar las paginas web</h4>
-          <p>Si cumplimos la técnica anterior ya nos aseguramos el cumplimiento del criterio de conformidad. No obstante,
-              aunque no sea estrictamente necesario, otra forma de cumplir este criterio de conformidad es validando el código
-              según la gramática formal usada.
-              La principal ventaja de validar el código es la eliminación de las ambigüedades que se pueden producir por el
-              uso de código incorrecto.</p>
+          <p>Si cumplimos la técnica anterior ya nos aseguramos el cumplimiento del criterio de conformidad. No
+            obstante,
+            aunque no sea estrictamente necesario, otra forma de cumplir este criterio de conformidad es validando el
+            código
+            según la gramática formal usada.
+            La principal ventaja de validar el código es la eliminación de las ambigüedades que se pueden producir por
+            el
+            uso de código incorrecto.</p>
           <p>El uso de código (X)HTML que no valide frente a una gramática formal presenta una serie de limitaciones y
-              desventajas:</p>
-          <p><b>Limitación en la compatibilidad del código.</b> Las gramáticas del W3C nos aseguran que el código es estándar
-              y que,
-              por lo tanto, va a ser compatible con todos los navegadores.
-      
-              Si empleamos código sin validar podemos usar elementos o atributos propietarios de los diferentes navegadores
-              que, o bien no funcionen en el resto, o bien con el tiempo acaben desapareciendo y dejen de soportarse, ya que
-              los navegadores tienden a cumplir los estándares.</p>
-      
-          <p><b>Inseguridad sobre la compatibilidad futura.</b> Además de los elementos propietarios, en la evolución de HTML
-              hay una serie de elementos y atributos que antes formaban parte de la especificación pero que, actualmente,
-              están desaconsejados. Muchos de los navegadores no soportarán esos elementos en un futuro más o menos cercano.
+            desventajas:</p>
+          <p><b>Limitación en la compatibilidad del código.</b> Las gramáticas del W3C nos aseguran que el código es
+            estándar
+            y que,
+            por lo tanto, va a ser compatible con todos los navegadores.
+
+            Si empleamos código sin validar podemos usar elementos o atributos propietarios de los diferentes
+            navegadores
+            que, o bien no funcionen en el resto, o bien con el tiempo acaben desapareciendo y dejen de soportarse, ya
+            que
+            los navegadores tienden a cumplir los estándares.</p>
+
+          <p><b>Inseguridad sobre la compatibilidad futura.</b> Además de los elementos propietarios, en la evolución de
+            HTML
+            hay una serie de elementos y atributos que antes formaban parte de la especificación pero que, actualmente,
+            están desaconsejados. Muchos de los navegadores no soportarán esos elementos en un futuro más o menos
+            cercano.
           </p>
-      
-          <p><b>Falta de separación entre contenido y presentación.</b> En el lenguaje HTML existen etiquetas que sirven para
-              definir la estructura del documento, organizar su contenido y definir su presentación. Con frecuencia creamos
-              código en el que se mezcla el contenido de las páginas con su presentación, generando un código complejo y
-              difícil de mantener y modificar. En las gramáticas de tipo estricto (Strict) se evitan elementos y atributos
-              desaconsejados, generalmente de presentación.</p>
-      
+
+          <p><b>Falta de separación entre contenido y presentación.</b> En el lenguaje HTML existen etiquetas que sirven
+            para
+            definir la estructura del documento, organizar su contenido y definir su presentación. Con frecuencia
+            creamos
+            código en el que se mezcla el contenido de las páginas con su presentación, generando un código complejo y
+            difícil de mantener y modificar. En las gramáticas de tipo estricto (Strict) se evitan elementos y atributos
+            desaconsejados, generalmente de presentación.</p>
+
           <h4 id="tema">Usar el lenguaje de acuerdo a la especificación</h4>
-      
-          <p>Esta se trata de otra técnica suficiente pero no necesaria. Es aún más restrictiva que las anteriores y si el
-              código valida correctamente ya estamos cumpliendo el criterio de conformidad y esta técnica no sería necesaria.
-      
-              Sin embargo, desde el punto de vista del cumplimiento de los estándares, es la técnica más completa y, por
-              tanto, la más recomendable.
-      
-              Las especificaciones definen la finalidad, significado y forma correcta de uso de las características de la
-              tecnología correspondiente. Usar los lenguajes de marcado de acuerdo a la especificación asegura que los agentes
-              de usuario y productos de apoyo podrán presentar, interpretar e interactuar con el contenido de forma correcta.
-      
-              Esta técnica no implica sólo la validación según la gramática usada, ya que la validación únicamente comprueba
-              la corrección sintáctica. Lo que nos está pidiendo es cumplir totalmente con la especificación, tanto
-              gramatical, sintáctica y semánticamente. Es decir, usar los elementos correctamente con la finalidad que les
-              corresponde.</p>
+
+          <p>Esta se trata de otra técnica suficiente pero no necesaria. Es aún más restrictiva que las anteriores y si
+            el
+            código valida correctamente ya estamos cumpliendo el criterio de conformidad y esta técnica no sería
+            necesaria.
+
+            Sin embargo, desde el punto de vista del cumplimiento de los estándares, es la técnica más completa y, por
+            tanto, la más recomendable.
+
+            Las especificaciones definen la finalidad, significado y forma correcta de uso de las características de la
+            tecnología correspondiente. Usar los lenguajes de marcado de acuerdo a la especificación asegura que los
+            agentes
+            de usuario y productos de apoyo podrán presentar, interpretar e interactuar con el contenido de forma
+            correcta.
+
+            Esta técnica no implica sólo la validación según la gramática usada, ya que la validación únicamente
+            comprueba
+            la corrección sintáctica. Lo que nos está pidiendo es cumplir totalmente con la especificación, tanto
+            gramatical, sintáctica y semánticamente. Es decir, usar los elementos correctamente con la finalidad que les
+            corresponde.</p>
           <p>Actualmente las gramáticas (X)HTML más soportadas son:</p>
-          <p>> HTML 4.01: última versión madura de HTML y ampliamente soportada por los agentes de usuario y productos de
-              apoyo.</p>
+          <p>> HTML 4.01: última versión madura de HTML y ampliamente soportada por los agentes de usuario y productos
+            de
+            apoyo.</p>
           <p>> XHTML 1.0: con las mismas característica de HTML pero con estructura de XML y una sintaxis más estricta.
-              Actualmente, las versiones más recientes de XHTML no están totalmente soportadas.</p>
+            Actualmente, las versiones más recientes de XHTML no están totalmente soportadas.</p>
+        </div>
       </div>
     </div>
-  </div>
   </div>
   <br />
 
