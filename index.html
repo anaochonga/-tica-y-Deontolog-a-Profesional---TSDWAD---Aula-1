@@ -801,12 +801,141 @@
     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
       data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
-        Placeholder content for this accordion, which is intended to
-        demonstrate the <code>.accordion-flush</code> class. This is the
-        third item's accordion body. Nothing more exciting happening here in
-        terms of content, but just filling up the space to make it look, at
-        least at first glance, a bit more representative of how this would
-        look in a real-world application.
+        <div class="section-heading">
+              <h2 id="tema">Agentes de usuario</h2>
+          </div>
+      
+          <img src="img/Compatibilidad/navegadores-mercado.jpg" alt="Imagen navegadores">
+          <br>
+          <h3 id="tema">¿Que es un agente de usuario?</h3>
+      
+          <p>Cuando navegamos por Internet dejamos rastro. Esto es algo evidente que los usuarios saben. Siempre que visitamos
+              una página web podemos enviar información relacionada con nuestra conexión o el dispositivo que estamos usando.
+              Esto no quiere decir que todo sea negativo, ya que algunos datos van a ser necesarios para recibir un mejor
+              servicio. Sin embargo sí es cierto que la privacidad a veces está en juego y conviene tomar precauciones. En
+              este artículo vamos a hablar de qué significa User-Agent o Agente de Usuario. Es un término muy relacionado con
+              lo que hablamos.</p>
+      
+          <h3 id="tema">Compatibilidad</h3>
+      
+          <p> Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas.
+      
+              Para que todas las medidas de accesibilidad vistas en los otros principios sean efectivas, es fundamental que
+              aseguremos la compatibilidad del código con los agentes de usuario tanto actuales como futuros, incluyendo
+              también los productos de apoyo.</p>
+      
+          <p> Esto lo podemos lograr de dos formas: </p>
+      
+          <p> > Evitando malas prácticas que puedan provocar que los productos de apoyo no interpreten correctamente el
+              contenido (p. ej. por usar un marcado incorrecto) o que incluso lo lleguen a ignorar (p. ej. por usar un marcado
+              propietario) </p>
+      
+          <p> > Proporcionar la información en el contenido mediante marcado estándar de forma que los productos de apoyo
+              puedan reconocer dicho contenido e interactuar con él.</p>
+          <br>
+          <i>"Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas
+              técnicas"</i>
+      
+          <h3 id="tema">Objetivo</h3>
+          <p> Asegurar que los agentes de usuario y productos de apoyo puedan interpretar correctamente y procesar el
+              contenido.</p>
+          <p>Cuando hablamos de procesar el contenido nos referimos a transformar la entrada de texto en una estructura de
+              datos adecuada para ser interpretada y manejada por los agentes de usuario. Para (X)HTML la estructura de datos
+              usada para representar el contenido es un árbol en el que las etiquetas (elementos) son los nodos del mismo.</p>
+          <p> Cuando el código es incorrecto, los agentes de usuario suelen usar técnicas de reparación de código. Sin
+              embargo, estas técnicas pueden variar entre unos agentes de usuario y otros, pudiendo dar lugar a resultados
+              dispares.</p>
+          <p> Cuando el código es incorrecto, los agentes de usuario suelen usar técnicas de reparación de código. Sin
+              embargo, estas técnicas pueden variar entre unos agentes de usuario y otros, pudiendo dar lugar a resultados
+              dispares.</p>
+          <p>Si el código no se puede procesar correctamente entonces puede ocurrir que algunos agentes de usuario sean
+              incapaces de interpretar el código y presentar el contenido o
+              diferentes agentes de usuario interpreten el código de forma distinta (variando la estructura de datos) y como
+              resultado muestren diferentes contenidos</p>
+      
+          <h3 id="tema">¿Cómo lograrlo?</h3>
+      
+          <h4 id="tema">Asegurar que las paginas web puedan ser procesadas</h4>
+      
+          <p>El objetivo principal es evitar errores en el código que causen problemas a los productos de apoyo cuando traten
+              de procesar el contenido.
+      
+              Para evitar estos problemas no es imprescindible que el código sea válido según la gramática formal usada, o que
+              cumpla al completo con la especificación. Podemos evitar la gran mayoría de errores de procesamiento si al menos
+              la apertura y cierre de etiquetas se hace según la especificación o si los documentos están bien formados (XML).
+          </p>
+      
+          <p>En HTML, asegurar que la apertura y cierre de etiquetas sigue la especificación.</p>
+          <p> Esto implica que para los elementos se debe cumplir: </p>
+          <p> > Existencia etiquetas de cierre para todos los elementos que las requieran. </p>
+          <p> > No existencia de etiquetas de cierre para aquellos elementos en las que están prohibidas.</p>
+          <p> > Las etiquetas de apertura y cierre se deben anidar correctamente para todos los elementos.</p>
+          <p>De igual forma, al indicar los valores de los atributos debemos hacerlo correctamente (apertura y cierre del
+              entrecomillado)</p>
+          <p>En XHTML, asegurar que las páginas web están bien formadas</p>
+          <p>Como XHTML es un lenguaje basado en XML, podemos usar un parseador de XML que verifique que no se producen
+              errores al comprobar si el documento está bien formado.
+      
+              En determinados lenguajes, algunos elementos y/o atributos deben tener un valor único. En caso contrario, al
+              procesar el contenido los resultados pueden ser inconsistentes. Si los valores de los atributos id no son únicos
+              se imposibilita la identificación del contenido de forma unívoca. Esto es especialmente problemático cuando se
+              establecen relaciones entre el contenido y las referencias apuntan a identificadores repetidos. Por ejemplo, al
+              relacionar etiquetas y campos de formulario o las celdas de datos y celdas de encabezado en las tablas de datos.
+      
+              De igual forma, las referencias a identificadores inexistentes también es problemática. Por ejemplo, un
+              <b>label</b>
+              que en su atributo for haga referencia a un campo de formulario que no existe, o una celda de datos que en
+              su atributo headers indique encabezados inexistentes.
+          </p>
+      
+          <h4 id="tema">Validar las paginas web</h4>
+          <p>Si cumplimos la técnica anterior ya nos aseguramos el cumplimiento del criterio de conformidad. No obstante,
+              aunque no sea estrictamente necesario, otra forma de cumplir este criterio de conformidad es validando el código
+              según la gramática formal usada.
+              La principal ventaja de validar el código es la eliminación de las ambigüedades que se pueden producir por el
+              uso de código incorrecto.</p>
+          <p>El uso de código (X)HTML que no valide frente a una gramática formal presenta una serie de limitaciones y
+              desventajas:</p>
+          <p><b>Limitación en la compatibilidad del código.</b> Las gramáticas del W3C nos aseguran que el código es estándar
+              y que,
+              por lo tanto, va a ser compatible con todos los navegadores.
+      
+              Si empleamos código sin validar podemos usar elementos o atributos propietarios de los diferentes navegadores
+              que, o bien no funcionen en el resto, o bien con el tiempo acaben desapareciendo y dejen de soportarse, ya que
+              los navegadores tienden a cumplir los estándares.</p>
+      
+          <p><b>Inseguridad sobre la compatibilidad futura.</b> Además de los elementos propietarios, en la evolución de HTML
+              hay una serie de elementos y atributos que antes formaban parte de la especificación pero que, actualmente,
+              están desaconsejados. Muchos de los navegadores no soportarán esos elementos en un futuro más o menos cercano.
+          </p>
+      
+          <p><b>Falta de separación entre contenido y presentación.</b> En el lenguaje HTML existen etiquetas que sirven para
+              definir la estructura del documento, organizar su contenido y definir su presentación. Con frecuencia creamos
+              código en el que se mezcla el contenido de las páginas con su presentación, generando un código complejo y
+              difícil de mantener y modificar. En las gramáticas de tipo estricto (Strict) se evitan elementos y atributos
+              desaconsejados, generalmente de presentación.</p>
+      
+          <h4 id="tema">Usar el lenguaje de acuerdo a la especificación</h4>
+      
+          <p>Esta se trata de otra técnica suficiente pero no necesaria. Es aún más restrictiva que las anteriores y si el
+              código valida correctamente ya estamos cumpliendo el criterio de conformidad y esta técnica no sería necesaria.
+      
+              Sin embargo, desde el punto de vista del cumplimiento de los estándares, es la técnica más completa y, por
+              tanto, la más recomendable.
+      
+              Las especificaciones definen la finalidad, significado y forma correcta de uso de las características de la
+              tecnología correspondiente. Usar los lenguajes de marcado de acuerdo a la especificación asegura que los agentes
+              de usuario y productos de apoyo podrán presentar, interpretar e interactuar con el contenido de forma correcta.
+      
+              Esta técnica no implica sólo la validación según la gramática usada, ya que la validación únicamente comprueba
+              la corrección sintáctica. Lo que nos está pidiendo es cumplir totalmente con la especificación, tanto
+              gramatical, sintáctica y semánticamente. Es decir, usar los elementos correctamente con la finalidad que les
+              corresponde.</p>
+          <p>Actualmente las gramáticas (X)HTML más soportadas son:</p>
+          <p>> HTML 4.01: última versión madura de HTML y ampliamente soportada por los agentes de usuario y productos de
+              apoyo.</p>
+          <p>> XHTML 1.0: con las mismas característica de HTML pero con estructura de XML y una sintaxis más estricta.
+              Actualmente, las versiones más recientes de XHTML no están totalmente soportadas.</p>
       </div>
     </div>
   </div>
