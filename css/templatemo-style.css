@@ -1200,4 +1200,9 @@ footer .contact-info ul li a {
     footer .contact-info {
         margin-top: 60px;
     }
+
+    .lista-desordenada-padding{
+       text-align: center;
+    }
 }
+
